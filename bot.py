@@ -334,7 +334,7 @@ async def userinfo(ctx, member: discord.Member=None):
         value=member.joined_at.strftime("%d-%m-%Y")
     )
 
-    embed.set_thumbnail(url=member.avatar.url)
+    embed.set_thumbnail(url=member.display_avatar.url)
 
     await ctx.send(embed=embed)
 
